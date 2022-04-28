@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>contacto</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200&family=Manrope:wght@200&family=Nanum+Gothic&family=Poppins:wght@200&family=Raleway:ital,wght@0,200;1,300&display=swap');
+        *{
+            padding: 0;
+            margin: 0;
+            
+        }
+        .contacto{
+            font-family:'Poppins', sans-serif;
+            font-size:30px;
+            text-align: center;
+            background-color: rgb(255, 255, 255);
+        }
+        h1{
+            color:#AD78C6 ;
+        }
+        .contacto p{
+            font-size: 20px;
+            margin-top: 40px;
+            font-weight: bold;
+        
+        }
+        .p1{
+            margin-bottom: 100px;
+        }
+        fieldset{
+            margin-top: 150px;
+            height:300px;
+            width:400px;
+            background-color:black;
+            font-family: 'Poppins', sans-serif;
+            font-weight: bold;
+            text-align: center;
+            border: none;
+            margin: auto;
+            background-color: rgb(255, 255, 255);
+        }
+        label{
+            font-size: 20px;
+            color: #AD78C6;
+        }
+        input{
+            border: none;
+            font-size: 15px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: bold;
+            margin-top: 15px;
+            
+        }
+        .blanco{
+            margin-bottom: 40px;
+        }
+        .lb{
+            height: 150px;
+            width: 270px;
+            border-radius: 5px;
+            border: #AD78C6 solid 2px;
+            margin-bottom: 10px;
+        }
+        .borrar{
+            border-radius: 5px;
+            border: #AD78C6 solid 2px;
+            padding: 7px;
+            transition: all 0.75s;
+        }
+        .borrar:hover{
+            background-color:#885E9C;
+            transform: scale(1.05);
+            transition: all 0.75s;
+        }
+        h3{
+            text-align: center;
+            margin-top: 28%;
+            font-family: 'Poppins', sans-serif;
+            margin-bottom: 40px;
+        }
+        .animacion1 a{
+            color: #AD78C6;
+            font-size: 30px;
+            display: block;
+            display: inline-block;
+            padding: 15px;
+            transition: all 0.75s;
+        }
+        .animacion1:hover{
+            transform: scale(1.05);
+            transition: all 0.75s;
+        }
+        
+        @media only screen and (max-width:480px){
+            h3{
+                margin-top:100%;
+            }
+        }
+        @media only screen and (max-width:430px){
+            h3{
+                margin-top:110%;
+            }
+        }
+        .subir{
+    height: 40px;
+    width: 40px;
+    background-color: #AD78C6;
+    border: 5px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px;
+}
+    </style>
+</head>
+<body>
+    <header class="contacto">
+        <h1>Contacto</h1>
+        <p class="p1">Si tenes dudas sobre a los lugares donde visite podes contactarme, <br> solo dejame aca abajo tus consultas o lo que tengas que decirme.</p>
+    </header>
+    <section class="in1"></section>
+    <fieldset>
+        <form action="enviar.php" method="post" enctype="text/plain ">
+            <legend></legend><label for="">Nombre:</label></legend><br>
+            <input type="text"placeholder="ej:Mateo" class="blanco">
+            <br>
+            <label for="">Apellido:</label><br>
+            <input type="text"placeholder="ej:Rodrigez" class="blanco">
+            <br>
+            <label for="">Numero de telefono:</label><br>
+            <input type="text"placeholder="00000000" class="blanco">
+            <br>
+            <label for="">Mail:</label><br>
+            <input type="mail"placeholder="ej@gmail.com" class="blanco">
+            <br>
+            <label for="">Motivo del contacto:</label><br>
+            <input type="text" class="lb">
+            <br>
+            <input type="#" value="ENVIAR" class="borrar">
+            <input type="reset" value="BORRAR" class="borrar">
+            <br>
+        </fieldset>
+        </form>
+        <footer>
+        <h3>Te estare contestando por mail todas tus dudas o consultas !muchisimas gracias!</h3>
+        <center><div class="animacion1"><a href="https://github.com/Joacozulueta"><i class="fa-brands fa-github"></i></a></div></center>
+        <center><div class="animacion1"><a href="https://www.linkedin.com/in/joaco-zulueta-187998216/"><i class="fa-brands fa-linkedin"></i></a><div></center>
+        <center><div class="animacion1"><a href="https://www.instagram.com/joacozulueta_/"><i class="fa-brands fa-instagram"></i></a></div></center>
+    </footer>
+    <a href="../index.html" class="subir"><i class="fa-solid fa-house"></i></a>
+</body>
+</html>
