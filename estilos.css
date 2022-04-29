@@ -11,6 +11,21 @@ h2{
     color: rgb(0, 0, 0);
     font-family:'Poppins', sans-serif;
     font-variant: small-caps;
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-delay: 5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+    }
+
+    @keyframes aparecer {
+0%{
+            opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 .vacaciones{
     height: 450px;
@@ -228,6 +243,7 @@ h2{
     background-image: url(img/gigilio.jpg);
 }
 }
+
 .fr{
     text-align: center;
     font-family:'Poppins', sans-serif;
@@ -235,8 +251,24 @@ h2{
     margin-left: 160px;
     font-size: 20px;
     font-weight: bold;
-    
 }
+.jz{
+    transition: height 2s, width 0.5s;
+height: 100px;
+width: 80%;
+background-color: black;
+font-family: 'Poppins', sans-serif;
+color: white;
+text-align: center;
+font-size: 35px;
+}
+.jz:active{
+    height: 100px;
+    width: 100%;
+}
+
+
+
 .h2{
     font-size: 70px;
 }
